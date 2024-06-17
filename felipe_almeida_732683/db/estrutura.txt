@@ -1,0 +1,15 @@
+ESTRUTURA CONTEÚDOS SUGERIDOS
+
+Identificador do conteúdo (número sequencial)
+Título do conteúdo
+Descrição do conteúdo
+URL da imagem de capa do álbum
+URL do conteúdo
+ 
+
+ESTRUTURA COLEGAS DE TRABALHO
+
+Identificador do colega (número sequencial)
+URL da foto do colega
+Nome do colega
+URL do perfil do colega no GitHub 
