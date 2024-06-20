@@ -234,7 +234,7 @@ a {
 .card {
   border: 1px solid lightgray;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -245,10 +245,26 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 
-.card-image {
-  width: 100%;
-  height: auto;
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
 }
+
+.date-create{
+  color: rgb(31, 30, 30);
+  border: 1px solid  rgb(31, 30, 30);
+  border-radius: 20px;
+  padding: 3px 8px;
+  font-size: 0.9rem;
+}
+
+
+/* .card-image {  NÃO TEM MAIS
+  width: 100%; 
+  height: auto;
+} */
 
 .card-body {
   margin: 1rem;
