@@ -38,19 +38,19 @@
   ],
   "colegas": [
     {
-      "url_foto": "../public/assets/img/ColegaMatheus.jpg",
+      "url_foto": "./public/assets/img/ColegaMatheus.jpg",
       "nome": "Matheus Fuscaldi",
       "url_profile": "https://github.com/matheusfgs",
       "id": 1
     },
     {
-      "url_foto": "",
+      "url_foto": "./public/assets/img/ColegaAthos.jpg",
       "nome": "Athos Fonseca",
       "url_profile": "https://github.com/Athoosz",
       "id": 2
     },
     {
-      "url_foto": "../public/assets/img/ColegaMarcella.jpg",
+      "url_foto": "./public/assets/img/ColegaMarcella.jpg",
       "nome": "Marcella",
       "url_profile": "https://github.com/marcellasb28",
       "id": 3
