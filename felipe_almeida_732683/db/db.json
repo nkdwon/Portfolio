@@ -1,37 +1,37 @@
 {
   "conteudoSugerido": [
     {
-      "titulo": "Cleiton Silva",
-      "descricao": "",
-      "url_imagem": "",
-      "url_conteudo": "",
+      "titulo": "Learn Flexbox CSS in 8 minutes",
+      "descricao": "Aula de CSS Flexbox",
+      "url_imagem": "https://www.youtube.com/watch?v=phWxA89Dy94&t=323s",
+      "url_conteudo": "https://www.youtube.com/watch?v=phWxA89Dy94&t=323s",
       "id": 1
     },
     {
       "titulo": "Cleiton Silva",
       "descricao": "",
-      "url_imagem": "",
+      "url_imagem": "../public/assets/img/ColegaMatheus.jpg",
       "url_conteudo": "",
       "id": 2
     },
     {
       "titulo": "Cleiton Silva",
       "descricao": "",
-      "url_imagem": "",
+      "url_imagem": "../public/assets/img/ColegaMatheus.jpg",
       "url_conteudo": "",
       "id": 3
     },
     {
       "titulo": "Cleiton Silva",
       "descricao": "",
-      "url_imagem": "",
+      "url_imagem": "../public/assets/img/ColegaMatheus.jpg",
       "url_conteudo": "",
       "id": 4
     },
     {
       "titulo": "Cleiton Silva",
       "descricao": "",
-      "url_imagem": "",
+      "url_imagem": "../public/assets/img/ColegaMatheus.jpg",
       "url_conteudo": "",
       "id": 5
     }
