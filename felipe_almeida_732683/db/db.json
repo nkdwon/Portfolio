@@ -1,36 +1,36 @@
 {
   "conteudoSugerido": [
     {
-      "titulo": "Learn Flexbox CSS in 8 minutes",
-      "descricao": "Aula de CSS Flexbox",
-      "url_imagem": "https://www.youtube.com/watch?v=phWxA89Dy94&t=323s",
-      "url_conteudo": "https://www.youtube.com/watch?v=phWxA89Dy94&t=323s",
+      "titulo": "Linguagens de programação",
+      "descricao": "Algumas das mais importantes e variadas linguagens de programação",
+      "url_imagem": "../public/assets/img/LinguagensBanner.jpg",
+      "url_conteudo": "",
       "id": 1
     },
     {
-      "titulo": "Cleiton Silva",
-      "descricao": "",
+      "titulo": "Áreas da tecnologia",
+      "descricao": "O aumento de mercado de algumas áreas da tecnologia",
       "url_imagem": "../public/assets/img/Banner2.jpg",
       "url_conteudo": "",
       "id": 2
     },
     {
-      "titulo": "Cleiton Silva",
-      "descricao": "",
+      "titulo": "Laboratório de Programação MAC",
+      "descricao": "Laboratório de Programação MAC onde estudei Swift no Ensino Técnico",
       "url_imagem": "../public/assets/img/Banner3.jpg",
       "url_conteudo": "",
       "id": 3
     },
     {
-      "titulo": "Cleiton Silva",
-      "descricao": "",
+      "titulo": "Apresentação Minas Summit",
+      "descricao": "Minha equipe no evento Minas Summit onde apresentamos o PITCH do nosso projeto no Ensino Técnico ",
       "url_imagem": "../public/assets/img/Banner4.jpg",
       "url_conteudo": "",
       "id": 4
     },
     {
-      "titulo": "Cleiton Silva",
-      "descricao": "",
+      "titulo": "Porsche Taycan",
+      "descricao": "Um dos meus carros favoritos",
       "url_imagem": "../public/assets/img/Banner5.jpg",
       "url_conteudo": "",
       "id": 5
