@@ -38,7 +38,7 @@
   ],
   "colegas": [
     {
-      "url_foto": "../public/assets/img/ColegaMatheus.jpg",
+      "url_foto": "https://nkdwon.github.io/Portfolio/felipe_almeida_732683/public/assets/img/ColegaMatheus.jpg",
       "nome": "Matheus Fuscaldi",
       "url_profile": "https://github.com/matheusfgs",
       "id": 1
