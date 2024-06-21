@@ -109,7 +109,7 @@ async function fetchJsonData() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Erro ao buscar o arquivo JSON:', error);
+      console.error('Erro ao buscar o arquivo JSON:', error);
     return null;
   }
 }
@@ -122,7 +122,7 @@ function updateEquipeSection(colegas) {
 
     colegaDiv.innerHTML = `
       <a href="${colega.url_profile || '#'}" target="_blank">
-        <img src="${colega.url_foto}" alt="Foto ${colega.nome}" />
+        <img src="${colega.url_foto}" alt="Foto ${colega.nome}" class="colegaImagem"/>
         <h3 class="nomePessoa">${colega.nome || 'Nome não disponível'}</h3>
       </a>
     `;

@@ -349,7 +349,7 @@ a {
   filter: brightness(120%);
 }
 
-.colega > img {
+.colegaImagem {
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 0.6rem;
