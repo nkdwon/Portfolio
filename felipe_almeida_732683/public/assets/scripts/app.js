@@ -94,6 +94,48 @@ getReposApiGithub();
 
 //SEÇÃO CARROSSEL
 
+const sliderContainer = document.getElementById('slider');
+const sliderNavContainer = document.getElementById('slider-nav');
+
+// Função para buscar os dados do JSON
+async function fetchJsonData() {
+  try {
+    const response = await fetch('https://nkdwon.github.io/Portfolio/felipe_almeida_732683/db/db.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro ao buscar o arquivo JSON:', error);
+    return null;
+  }
+}
+
+// Função para atualizar o carrossel
+function updateCarousel(conteudoSugerido) {
+
+  conteudoSugerido.forEach((item, index) => {
+    // Adiciona a imagem ao carrossel
+    let img = document.createElement('img');
+    img.id = `slide-${index + 1}`;
+    img.src = item.url_imagem;
+    img.alt = item.titulo || 'Imagem';
+    sliderContainer.appendChild(img);
+
+    // Adiciona o link de navegação ao carrossel
+    let navLink = document.createElement('a');
+    navLink.href = `#slide-${index + 1}`;
+    sliderNavContainer.appendChild(navLink);
+  });
+}
+
+// Chamar a função para buscar os dados e atualizar o carrossel
+fetchJsonData().then(data => {
+  if (data) {
+    updateCarousel(data.conteudoSugerido);
+  }
+});
 
 //SEÇÃO COLEGAS
 
