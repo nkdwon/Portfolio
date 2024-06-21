@@ -98,7 +98,7 @@ const sliderContainer = document.getElementById('slider');
 const sliderNavContainer = document.getElementById('slider-nav');
 
 // Função para buscar os dados do JSON
-async function fetchJsonData() {
+async function getCarrosselApiJSON() {
   try {
     const response = await fetch('https://nkdwon.github.io/Portfolio/felipe_almeida_732683/db/db.json');
     if (!response.ok) {
@@ -107,7 +107,7 @@ async function fetchJsonData() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Erro ao buscar o arquivo JSON:', error);
+      console.error('Erro ao buscar o arquivo JSON:', error);
     return null;
   }
 }
@@ -131,7 +131,7 @@ function updateCarousel(conteudoSugerido) {
 }
 
 // Chamar a função para buscar os dados e atualizar o carrossel
-fetchJsonData().then(data => {
+getCarrosselApiJSON().then(data => {
   if (data) {
     updateCarousel(data.conteudoSugerido);
   }
