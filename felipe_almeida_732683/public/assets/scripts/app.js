@@ -116,14 +116,13 @@ async function fetchJsonData() {
 
 // Função para atualizar a seção de equipe
 function updateEquipeSection(colegas) {
-  equipeContainer.innerHTML = ''; // Limpa o conteúdo existente
   colegas.forEach(colega => {
     let colegaDiv = document.createElement('div');
     colegaDiv.classList.add('colega');
 
     colegaDiv.innerHTML = `
       <a href="${colega.url_profile || '#'}" target="_blank">
-        <img src="${colega.url_foto || 'assets/img/default.jpg'}" alt="Foto ${colega.nome}" />
+        <img src="${colega.url_foto}" alt="Foto ${colega.nome}" />
         <h3 class="nomePessoa">${colega.nome || 'Nome não disponível'}</h3>
       </a>
     `;
