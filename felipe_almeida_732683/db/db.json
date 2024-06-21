@@ -38,7 +38,7 @@
   ],
   "colegas": [
     {
-      "url_foto": "",
+      "url_foto": "./public/assets/img/ColegaMatheus.jpg",
       "nome": "Matheus Fuscaldi",
       "url_profile": "https://github.com/matheusfgs",
       "id": 1
@@ -50,7 +50,7 @@
       "id": 2
     },
     {
-      "url_foto": "",
+      "url_foto": "./public/assets/img/ColegaMarcella.jpg",
       "nome": "Marcella",
       "url_profile": "https://github.com/marcellasb28",
       "id": 3

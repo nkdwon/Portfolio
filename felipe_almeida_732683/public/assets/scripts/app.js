@@ -91,3 +91,50 @@ function getReposApiGithub() {
 }
 
 getReposApiGithub();
+
+//SEÇÃO CARROSSEL
+
+
+//SEÇÃO COLEGAS
+
+const equipeContainer = document.querySelector('.containerEquipe');
+
+// Função para buscar os dados do JSON
+async function fetchJsonData() {
+  try {
+    const response = await fetch('https://nkdwon.github.io/Portfolio/felipe_almeida_732683/db/db.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro ao buscar o arquivo JSON:', error);
+    return null;
+  }
+}
+
+// Função para atualizar a seção de equipe
+function updateEquipeSection(colegas) {
+  equipeContainer.innerHTML = ''; // Limpa o conteúdo existente
+  colegas.forEach(colega => {
+    let colegaDiv = document.createElement('div');
+    colegaDiv.classList.add('colega');
+
+    colegaDiv.innerHTML = `
+      <a href="${colega.url_profile || '#'}" target="_blank">
+        <img src="${colega.url_foto || 'assets/img/default.jpg'}" alt="Foto ${colega.nome}" />
+        <h3 class="nomePessoa">${colega.nome || 'Nome não disponível'}</h3>
+      </a>
+    `;
+
+    equipeContainer.appendChild(colegaDiv);
+  });
+}
+
+// Chamar a função para buscar os dados e atualizar a seção de equipe
+fetchJsonData().then(data => {
+  if (data) {
+    updateEquipeSection(data.colegas);
+  }
+});
