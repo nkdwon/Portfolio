@@ -1,5 +1,5 @@
 
-//SEÇÃO PERFIL
+/* SEÇÃO PERFIL */
 
 const bio = document.querySelector('#secao_perfil');
 
@@ -45,18 +45,18 @@ function getBioApiGithub() {
 getBioApiGithub();
 
 
-//SEÇÃO REPOSITÓRIOS
+/* SEÇÃO REPOSITÓRIOS */
 
-const repositories = document.querySelector('#secao_repositorios')
-const num_repositories = document.querySelector('#num_repos')
+const repositories = document.querySelector('#secao_repositorios');
+const num_repositories = document.querySelector('#num_repos');
 
 function getReposApiGithub() {
   fetch('https://api.github.com/users/nkdwon/repos').then(async res => {
     if (!res.ok) {
-      throw new Error(res.status)
+      throw new Error(res.status);
     }
     
-    let data = await res.json()
+    let data = await res.json();
     let count = 0; // Contador de repositórios exibidos
 
     data.map(item => {
@@ -64,24 +64,24 @@ function getReposApiGithub() {
         // Ignora o repositório 'nkdwon'
         return;
       }
-      let secao_repos = document.createElement('div')
+      let secao_repos = document.createElement('div');
 
       secao_repos.innerHTML = `
       <div class="card">
-        <a href="${item.html_url || '#'}"> 
+        <a href="repo.html?id=${item.id}"> 
           <div class="card-body">
             <div class="card-title">
               <h3>${item.name || 'Nome não disponível'}</h3>
-              <span class="date-create">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
+              <span class="date-create">${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at) || 'Data não disponível')}</span>
             </div>
             <p class="card-text">${item.description || 'Descrição não disponível'}</p>
           </div>
         </a>
-      </div>`
+      </div>`;
       repositories.appendChild(secao_repos);
       count++;
     });
-    num_repositories.textContent = `(${count})`
+    num_repositories.textContent = `(${count})`;
   }).catch(error => {
     // Tratar erros da requisição fetch
     console.error('Erro:', error);
@@ -92,7 +92,8 @@ function getReposApiGithub() {
 
 getReposApiGithub();
 
-//SEÇÃO CARROSSEL
+
+/* SEÇÃO CARROSSEL */
 
 const sliderContainer = document.getElementById('slider');
 const sliderNavContainer = document.getElementById('slider-nav');
@@ -137,7 +138,8 @@ getCarrosselApiJSON().then(data => {
   }
 });
 
-//SEÇÃO COLEGAS
+
+/* SEÇÃO COLEGA  */
 
 const equipeContainer = document.querySelector('.containerEquipe');
 
