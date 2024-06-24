@@ -15,8 +15,6 @@ Um portfólio responsivo desenvolvido com API do GitHub e JSON Server integrada,
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
 </p>
 
 ---
@@ -54,11 +52,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Para o funcionamento total do projeto, é necessário que você baixe o projeto e tenha o Node.js instalado em sua máquina.
 
-- Após a instalção, utilize o comando npm start no terminal do VS Code, assim inicializando o JSON server para trazer de sua API os dados da página.
+- Após a instalção, utilize o comando npm start no terminal do VS Code, assim, inicializando o JSON server para trazer de sua API os dados da página.
 
-- Assim que fizer isso, você pode acessar o endereço da máquina (http://localhost:3000/) e ver o projeto ou, você também pode acessar o projeto já online e agora completo [aqui!](https://nkdwon.github.io/Portfolio/felipe_almeida_732683/public/index.html)
+- Após que fazer isso, você pode acessar o endereço da máquina (http://localhost:3000/) e ver o projeto ou, você também pode acessar o projeto já online e agora completo [aqui!](https://nkdwon.github.io/Portfolio/felipe_almeida_732683/public/index.html)
 
-- Caso não tenha o Node.js instalado, consulte este [vídeo](https://www.youtube.com/watch?v=64i9Jhn_lZc&t=190s). Se tiver dúvidas ou mais interesse em aprender sobre a ferramenta, acesse a documentação [aqui](https://nodejs.org/en/download/prebuilt-installer)
+- Caso não tenha o Node.js instalado, consulte este [vídeo](https://www.youtube.com/watch?v=64i9Jhn_lZc&t=190s). Se tiver dúvidas ou mais interesse em aprender sobre a ferramenta, acesse a documentação [aqui](https://nodejs.org/en/download/prebuilt-installer).
 
 ## 📝 Licença
 
