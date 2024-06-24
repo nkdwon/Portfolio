@@ -23,3 +23,7 @@ server.use(router)
 server.listen(3000, () => {
   console.log('JSON Server está em execução!')
 })
+
+
+//Este arquivo basicamente não está sendo utilizado, o npm start roda o comando json-server --watch db/db.json que por si só já faz o trabalho
+// este arquivo aqui estava dando um problema que não entendi
