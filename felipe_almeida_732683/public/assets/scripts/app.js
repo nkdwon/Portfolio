@@ -101,26 +101,30 @@ const sliderNavContainer = document.getElementById('slider-nav');
 // Função para buscar os dados do JSON
 async function getCarrosselApiJSON() {
   try {
-    const response = await fetch('https://nkdwon.github.io/Portfolio/felipe_almeida_732683/db/db.json');
+    const response = await fetch('http://localhost:3000/conteudoSugerido');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data;
   } catch (error) {
-      console.error('Erro ao buscar o arquivo JSON:', error);
+    console.error('Erro ao buscar o arquivo JSON:', error);
     return null;
   }
 }
 
 // Função para atualizar o carrossel
 function updateCarousel(conteudoSugerido) {
+  if (!conteudoSugerido || !Array.isArray(conteudoSugerido)) {
+    console.error('Formato de dados inválido:', conteudoSugerido);
+    return;
+  }
 
   conteudoSugerido.forEach((item, index) => {
     // Adiciona a imagem ao carrossel
     let img = document.createElement('img');
     img.id = `slide-${index + 1}`;
-    img.src = item.url_imagem;
+    img.src = item.url_imagem || 'path/to/default-image.jpg'; // Caminho padrão se a imagem estiver ausente
     img.alt = item.titulo || 'Imagem';
     sliderContainer.appendChild(img);
 
@@ -134,26 +138,25 @@ function updateCarousel(conteudoSugerido) {
 // Chamar a função para buscar os dados e atualizar o carrossel
 getCarrosselApiJSON().then(data => {
   if (data) {
-    updateCarousel(data.conteudoSugerido);
+    updateCarousel(data);
   }
 });
 
-
-/* SEÇÃO COLEGA  */
+/* SEÇÃO COLEGA */
 
 const equipeContainer = document.querySelector('.containerEquipe');
 
 // Função para buscar os dados do JSON
 async function fetchJsonData() {
   try {
-    const response = await fetch('https://nkdwon.github.io/Portfolio/felipe_almeida_732683/db/db.json');
+    const response = await fetch('http://localhost:3000/colegas');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data;
   } catch (error) {
-      console.error('Erro ao buscar o arquivo JSON:', error);
+    console.error('Erro ao buscar o arquivo JSON:', error);
     return null;
   }
 }
@@ -178,6 +181,7 @@ function updateEquipeSection(colegas) {
 // Chamar a função para buscar os dados e atualizar a seção de equipe
 fetchJsonData().then(data => {
   if (data) {
-    updateEquipeSection(data.colegas);
+    updateEquipeSection(data);
   }
 });
+

@@ -3,54 +3,54 @@
     {
       "titulo": "Linguagens de programação",
       "descricao": "Algumas das mais importantes e variadas linguagens de programação",
-      "url_imagem": "../public/assets/img/LinguagensBanner.jpeg",
-      "url_conteudo": "",
+      "url_imagem": "https://www.insper.edu.br/wp-content/uploads/2023/04/Linguagen-de-programacao-2-shutterstock_1680857539.jpg.jpeg",
+      "url_conteudo": "https://www.insper.edu.br/noticias/quais-sao-as-principais-linguagens-de-programacao-e-para-que-servem/",
       "id": 1
     },
     {
       "titulo": "Áreas da tecnologia",
       "descricao": "O aumento de mercado de algumas áreas da tecnologia",
-      "url_imagem": "../public/assets/img/Banner2.jpg",
-      "url_conteudo": "",
+      "url_imagem": "https://blog.fecap.br/wp-content/uploads/FECAP-areas-da-tecnologia.jpg",
+      "url_conteudo": "https://blog.fecap.br/areas-da-tecnologia/",
       "id": 2
     },
     {
       "titulo": "Laboratório de Programação MAC",
       "descricao": "Laboratório de Programação MAC onde estudei Swift no Ensino Técnico",
-      "url_imagem": "../public/assets/img/Banner3.jpg",
-      "url_conteudo": "",
+      "url_imagem": "https://www.cotemig.com.br/assets/img/units/cotemig-barroca-laboratorio-mac-860.jpg",
+      "url_conteudo": "https://www.cotemig.com.br/",
       "id": 3
     },
     {
       "titulo": "Apresentação Minas Summit",
       "descricao": "Minha equipe no evento Minas Summit onde apresentamos o PITCH do nosso projeto no Ensino Técnico ",
-      "url_imagem": "../public/assets/img/Banner4.jpg",
-      "url_conteudo": "",
+      "url_imagem": "https://www2.ufjf.br/critt/wp-content/uploads/sites/121/2023/07/2.jpg",
+      "url_conteudo": "https://fcjventurebuilder.com/minas-summit-2024-encontro-de-inovacao-estende-programacao-para-dois-dias/",
       "id": 4
     },
     {
       "titulo": "Porsche Taycan",
       "descricao": "Um dos meus carros favoritos",
-      "url_imagem": "../public/assets/img/Banner5.jpg",
-      "url_conteudo": "",
+      "url_imagem": "https://www.autoo.com.br/fotos/2019/9/1280_960/porsche_taycan_2020_1_05092019_15676_1280_960.jpg",
+      "url_conteudo": "https://www.porsche.com/brazil/pt/models/taycan/taycan-models/taycan/",
       "id": 5
     }
   ],
   "colegas": [
     {
-      "url_foto": "../public/assets/img/ColegaMatheus.jpg",
+      "url_foto": "https://i.postimg.cc/hvGVQFGG/Colega-Matheus.jpg",
       "nome": "Matheus Fuscaldi",
       "url_profile": "https://github.com/matheusfgs",
       "id": 1
     },
     {
-      "url_foto": "../public/assets/img/ColegaAthos.jpg",
+      "url_foto": "https://i.postimg.cc/rmM1cRXx/Colega-Athos.jpg",
       "nome": "Athos Fonseca",
       "url_profile": "https://github.com/Athoosz",
       "id": 2
     },
     {
-      "url_foto": "../public/assets/img/ColegaMarcella.jpg",
+      "url_foto": "https://i.postimg.cc/2yXh4Hq7/Colega-Marcella.jpg",
       "nome": "Marcella Belchior",
       "url_profile": "https://github.com/marcellasb28",
       "id": 3
